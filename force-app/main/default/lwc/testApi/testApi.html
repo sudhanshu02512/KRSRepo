@@ -1,0 +1,11 @@
+<template>
+    <lightning-card>
+        <div>
+            <lightning-input label="Enter Endpoint" type="text" oninput={endPointHandler}></lightning-input>
+            <lightning-button label="Run" variant="brand" onclick={runHandler}></lightning-button>
+        </div>
+        <div>
+            Response: {response}
+        </div>
+    </lightning-card>
+</template>

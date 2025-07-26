@@ -1,0 +1,30 @@
+<template>
+   <div class="radio-group">
+      <lightning-radio-group 
+         name="radioGroup"
+         label={label}
+         options={options}
+         variant="label-hidden"
+         value={value}
+         type="radio"
+         required>
+      </lightning-radio-group>
+   </div>
+
+   <!-- <fieldset class="slds-form-element" role="radiogroup">
+      <legend class="slds-form-element__legend slds-form-element__label">{label}</legend>
+      <div class="slds-form-element__control">
+         <span class="slds-radio ">
+            <template for:each={options} for:item="item">
+                <span key={item.value}>
+                    <input type="radio" id="radio-59" value={item.value} name="default" />
+                    <label class="slds-radio__label" for="radio-59">
+                        <span class="slds-radio_faux"></span>
+                        <span class="slds-form-element__label">{item.label}</span>
+                    </label>
+                </span>
+            </template>
+         </span>
+      </div>
+   </fieldset> -->
+</template>

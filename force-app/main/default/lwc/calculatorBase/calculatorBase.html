@@ -1,0 +1,29 @@
+<template>
+    <!-- <article class="slds-card">
+        <div class="add-margin">
+            <label for="input-1"> Number 1</label>
+            <input type="number" class="slds-input" id="input-1" inputmode="numeric" />
+        </div>
+        <div class="add-margin">
+            <label for="input-2"> Number 2</label>
+            <input  type="number" class="slds-input" id="input-2" inputmode="numeric"/>
+        </div>
+        <div class="add-margin">
+            <button class="slds-button slds-button_brand"> Add</button>
+            <button class="slds-button slds-button_brand"> Subtract</button>
+            <button class="slds-button slds-button_neutral"> Clear</button>
+        </div>
+    </article> -->
+
+    <lightning-card>
+        <div class="slds-m-around_small">
+            <lightning-input type="number" label="Number 1" checked> </lightning-input>
+            <lightning-input type="number" label="Number 2" checked> </lightning-input>
+        </div>
+        <div class="slds-m-around_small">
+            <lightning-button label="Add" variant="brand"></lightning-button>
+            <lightning-button label="Sub" class="slds-m-horizontal_small" variant="brand"></lightning-button>
+            <lightning-button label="Clear" variant="neutral"></lightning-button>
+        </div>
+    </lightning-card>
+</template>

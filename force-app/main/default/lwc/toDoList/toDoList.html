@@ -1,0 +1,14 @@
+<template>
+    <lightning-card>
+        <div class="slds-m-around_small">
+            <div>Task List</div>
+            <div>No. of Task {noOfTask}</div>
+            <!-- Task Added -->
+            <div>
+                <lightning-input lwc:ref="taskBox" data-id="input1" type="text" variant="standard" name="task" label="Task detail" onchange={taskDetailHandler}></lightning-input>
+                <lightning-button label="Add Task" onclick={addTask}></lightning-button>
+            </div>
+            <c-task-list-child lwc:ref="childComp"></c-task-list-child>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,11 @@
+<template>
+    <lightning-card>
+        CONTACT DETAILS
+       <template for:each={contactRecords} for:item="contact">
+           <div key={contact.id}> {contact.name}</div>
+           <div key={contact.id}> {contact.phone}</div>
+           <div key={contact.id}> {contact.email}</div>
+           <div key={contact.id}> {contact.id}</div>
+       </template>
+    </lightning-card>
+</template>

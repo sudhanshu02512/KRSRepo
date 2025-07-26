@@ -1,0 +1,12 @@
+:host{
+	--slds-c-input-color-border: white;
+	--slds-c-input-spacing-inlinestart: 0em;
+	--slds-c-input-spacing-inlineend:0em;
+	--slds-c-input-color-border-focus: red;
+}
+.my-input{
+	font-weight: 600;
+}
+.input-label{
+	font-size: 0.8em;
+}

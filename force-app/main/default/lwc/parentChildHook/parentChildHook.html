@@ -1,0 +1,9 @@
+<template>
+    <lightning-card  >
+        <div>Parent Component</div>
+        <div>Parent Property: {parentProp}</div>
+        <div><lightning-button variant="brand" label="Change Parent Prop" title="Change Parent Prop" onclick={changeProp}></lightning-button></div>
+        <div><lightning-button variant="brand" label="Show/Hide Child" title="Show/Hide Child" onclick={showHideChild}></lightning-button></div> 
+        <c-child-hook lwc:if={showChild} lwc:spread={childProp}></c-child-hook>
+    </lightning-card>
+</template>

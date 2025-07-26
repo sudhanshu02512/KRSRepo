@@ -1,0 +1,11 @@
+<template>
+    <lightning-card>
+       <div>
+           {prop1}
+       </div>
+       <template for:each={prop1} for:item="prp">
+           <div key={prp}>{prp}</div>
+       </template>
+       <lightning-button variant="brand" label="Change Property" onclick={changeProperties}></lightning-button>
+    </lightning-card>
+</template>

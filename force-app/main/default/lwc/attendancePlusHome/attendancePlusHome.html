@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Attedance +">
+        <lightning-button variant={clockButtonVariant} label={clockButtonLabel} title={clockButtonTitle} onclick={clockHandler} slot="actions"></lightning-button>
+        <div>
+            <div class="slds-grid">
+                <div class="slds-col">
+                    <div class="image-container">
+                        <image class="image-icon" src={clockImage}/>
+                    </div>
+                </div>
+                <div class="slds-col">
+                    <image class="image-icon" src={attendanceSheetImage}/>
+                </div>
+            </div>
+        </div>
+    </lightning-card>
+</template>

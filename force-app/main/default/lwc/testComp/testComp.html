@@ -1,0 +1,19 @@
+<template>
+<div class="slds-var-p-around_xx-large">
+        <div class="slds-col slds-size_1-of-2">
+            <div>
+                Do you owe any outstanding taxes on your personal tax returns?
+            </div>
+            <!--TECH-91862-->
+
+                <div class="slds-grid slds-wrap slds-p-bottom_large">
+                    <div style="width:246px;">
+                        <lightning-input onchange={handleOutstandingPersonalTaxes} required type="number" name="" label="" value={outstandingPersonalTaxes} variant="label-hidden" formatter="currency" step="0.01" placeholder="What is the total amount you owe?"></lightning-input>
+                    </div>&nbsp;&nbsp;
+                    <div style="width:246px;">
+                        <lightning-input onchange={handleOutstandingTaxesMonthly} required type="number" name="" label="" value={outstandingTaxesMonthly} variant="label-hidden" formatter="currency" step="0.01" placeholder="How much do you pay each month"></lightning-input>   
+                    </div> 
+                </div>
+        </div>
+        </div>
+    </template>

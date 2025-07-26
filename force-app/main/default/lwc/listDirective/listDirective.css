@@ -1,0 +1,8 @@
+.heading{
+	font-weight: bold;
+}
+.border{
+	border-style: solid;
+	border-width: 0.2em;
+	border-radius: 1.8em;
+}

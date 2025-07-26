@@ -1,0 +1,21 @@
+<template>
+    <lightning-card>
+        CHILD COMPONENT
+        <div>
+            {myProp1}
+            {myProp2}
+        </div>
+        <div>
+            {myProp3}
+            {myProp4}
+        </div>
+        <div>
+            {myNumber}
+        </div>
+        <div>
+            <lightning-input type="text" variant="standard" name="FirstName" label="FirstName" onchange={firstNameHandler}></lightning-input>
+            <lightning-input type="text" variant="standard" name="LastName" label="LastName" onchange={lastNameHandler}></lightning-input>
+            <lightning-button variant="brand" label="Send Detail" title="titleName" onclick={handleClick}></lightning-button>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,38 @@
+<template>
+    <div lwc:if={showSpinner}>
+        <lightning-spinner alternative-text="Loading" size="xx-small"></lightning-spinner>
+    </div>
+    <!-- Request Type -->
+     <div lwc:if={showRequestTypeScreen}>
+        <c-select-component label="Activate user" onclick={activateUserHandler}></c-select-component>
+        <c-select-component label="Deactivate user"></c-select-component>
+     </div>
+    
+    
+    <!-- Activate User -->
+     <c-user-access-manager-select-user lwc:if={showSelectUser}></c-user-access-manager-select-user>
+    
+    <!-- <div lwc:if={showNewRequestForm}>
+        <lightning-record-edit-form object-api-name="User_Access_Request__c" lwc:ref="newRequestForm" onsubmit={submitRequestHandler} onsuccess={requestSuccessHandler}>
+            <lightning-messages></lightning-messages>
+            <lightning-input-field field-name="User__c" required> </lightning-input-field>
+            <lightning-input-field field-name="Request_Type__c" required> </lightning-input-field>
+            <lightning-input-field field-name="Access_Type__c" required> </lightning-input-field>
+            <lightning-input-field field-name="Start_Date__c" required> </lightning-input-field>
+            <lightning-input-field field-name="End_Date__c" required> </lightning-input-field>
+            <lightning-button type="submit" label="Submit Request" variant="brand"></lightning-button>
+        </lightning-record-edit-form>
+    </div>
+    <div lwc:if={showRequestMessage}>
+        <div class="slds-align_absolute-center">
+            <lightning-icon icon-name="utility:success"></lightning-icon>
+        </div>
+        <div class="slds-align_absolute-center">
+            Your request is successfully submit. 
+            <br>
+            Request Id: {requestId}
+            <br>
+            Go to 'Track My Requests' to track status.
+        </div>
+    </div> -->
+</template>

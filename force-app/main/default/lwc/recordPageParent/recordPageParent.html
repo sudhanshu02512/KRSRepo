@@ -1,0 +1,6 @@
+<template>
+    <div lwc:if={showSections}>
+        <c-record-page-section1 app={application} onfieldvalueupdated ={fieldValueUpdateHandler}></c-record-page-section1>
+        <lightning-button label='Save' onclick={saveHandler}></lightning-button>
+    </div>
+</template>

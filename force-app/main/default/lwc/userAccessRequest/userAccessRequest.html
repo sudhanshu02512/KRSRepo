@@ -1,0 +1,46 @@
+<template>
+    <lightning-modal-header label="Create New User Access Request"></lightning-modal-header>
+    <lightning-modal-body>
+        <div class="slds-p-around_small">
+            <!-- Multi User Lookup -->
+            <div>
+                <c-multi-lookup></c-multi-lookup>
+            </div>
+            <div>
+                <lightning-record-edit-form object-api-name={objectApiName} onsubmit={submitHandler}>
+                    <lightning-layout>
+                        <lightning-layout-item size="6">
+                            <lightning-input-field field-name="Start_Date__c" required> </lightning-input-field>
+                            <lightning-input-field field-name="Provision_Type__c" onchange={provisionTypeHandler}
+                                required> </lightning-input-field>
+                            <lightning-input-field field-name="Interval__c" lwc:if={isRecurring}>
+                            </lightning-input-field>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="6">
+                            <lightning-input-field field-name="End_Date__c" required> </lightning-input-field>
+                            <lightning-input-field field-name="Frequency__c" lwc:if={isRecurring} required>
+                            </lightning-input-field>
+                            <lightning-input-field field-name="Days__c" lwc:if={isRecurring} required>
+                            </lightning-input-field>
+                        </lightning-layout-item>
+                    </lightning-layout>
+                    <!-- <div class="slds-align_absolute-center">
+                            <lightning-button class="slds-m-around_xx-small" label="Cancel"
+                                onclick={cancelHandler}></lightning-button>
+                            <lightning-button class="slds-m-around_xx-small" type="submit" label="Save" variant="brand"
+                                onsubmit={saveHandler}></lightning-button>
+                        </div> -->
+                        <input type="submit" class="hidden" />
+                </lightning-record-edit-form>
+                <!-- <lightning-record-form object-api-name={objectApiName} record-id={recordId} layout-type="Full" columns="2">
+                    </lightning-record-form> -->
+            </div>
+        </div>
+    </lightning-modal-body>
+    <lightning-modal-footer>
+        <div class="slds-align_absolute-center">
+            <lightning-button class="slds-m-around_xx-small" label="Cancel" onclick={cancelHandler}></lightning-button>
+            <lightning-button class="slds-m-around_xx-small" label="Save" variant="brand" onclick={saveHandler}></lightning-button>
+        </div>  
+    </lightning-modal-footer>
+</template>

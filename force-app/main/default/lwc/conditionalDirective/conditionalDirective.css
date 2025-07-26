@@ -1,0 +1,7 @@
+.button-container{
+	display: flex;
+	justify-content: flex-end;
+}
+.heading{
+	font-weight: bold;
+}

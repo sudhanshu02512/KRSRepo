@@ -1,0 +1,28 @@
+<template>
+    <template lwc:if={appStoreItems}>
+        <!-- App Store List -->
+        <div>
+            <lightning-layout>
+                <template for:each={appStoreItems} for:item="appStoreItem">
+                    <lightning-layout-item padding="around-small" key={appStoreItem.Id}>
+                        <c-app-store-item app-name={appStoreItem.Label} app-icon={appStoreItem.App_Icon__c} data-component-name={appStoreItem.LWC_Component__c} data-website-url={appStoreItem.Website_Url__c} onclick={appStoreItemClickHandler}></c-app-store-item>
+                    </lightning-layout-item>
+                </template>
+            </lightning-layout>
+        </div>
+
+        <!-- App Opener -->
+        <div lwc:if={application}>
+            <lightning-card>
+                <div class="slds-m-around_small">
+                    <lwc:component lwc:is={application} lwc:spread={spreadProperties}></lwc:component>
+                </div>
+            </lightning-card>
+        </div>
+    </template>
+
+    <template lwc:else>
+        <lightning-spinner></lightning-spinner>
+    </template>
+    
+</template>

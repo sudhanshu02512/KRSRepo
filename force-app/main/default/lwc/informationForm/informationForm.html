@@ -1,0 +1,37 @@
+<template>
+    <lightning-card>
+        <div class="slds-p-around_medium">
+            <div class="slds-text-heading_medium"><b>Income Information</b></div>
+            
+            <div class="slds-m-top_medium">
+                <div class="slds-text-heading_small"><b>Income Estimates (Before Taxes)</b></div>
+            </div>
+
+            <div class="slds-m-top_medium">
+                <p>Select all sources of income that contribute to your annual income. You must choose at least one source of income below. DO NOT include household or spousal income. You will have the option to add a co-applicant later. <b>All fields for selected income sources are required.</b></p>
+            </div>
+            <ul>
+                <li class="slds-m-top_medium">
+                    <lightning-layout>
+                        <lightning-layout-item>
+                            <lightning-input  name="Chk_to_PL__c" checked={chkPK} type="checkbox" label="Chk to PL" class="my-input"></lightning-input>
+                        </lightning-layout-item>
+                    </lightning-layout>
+                    <lightning-layout>
+                        <lightning-layout-item size="1" flexibility="auto">
+                            <lightning-input  name="Receive_Amount__c" checked={booleanPicklistFieldValue} type="checkbox" label="Employment Income" onchange={handleEmploymentChange} variant="label-hidden" class="my-input"></lightning-input>
+                        </lightning-layout-item>
+                        <lightning-layout-item flexibility="auto">
+                            <div ><b>Employment Income</b></div>
+                            <p>Typically received as full-time, part-time, or seasonal job wages, overtime, bonuses, and commissions. A W-2 tax document reports on income earned from these sources.</p>
+                            <lightning-input min="1" message-when-range-underflow="Minimum value should be 1" type="number" label="Est. Annual Income (Before Taxes)" lwc:if={disableFieldHandler} disabled={disableFieldHandler} onchange={incomeChange} required></lightning-input>
+                        </lightning-layout-item>
+                    </lightning-layout>
+                </li>
+            </ul>     
+        </div>
+        <div>
+            <lightning-button label="Save" variant="brand" class="button-style" onclick={saveHandler} disabled={buttondDis}></lightning-button>
+        </div>
+    </lightning-card>
+</template>

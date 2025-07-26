@@ -1,0 +1,13 @@
+lightning-input::slotted(span) {
+  font-weight: bold;
+  color: red;
+}
+.slds-checkbox_faux{
+	border-color: red;
+}
+:host{
+	--slds-c-checkbox-color-border:rgb(0, 165, 225);
+}
+.button-style{
+  width: 120px;
+}

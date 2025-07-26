@@ -1,0 +1,30 @@
+<template>
+  <lightning-card icon-name="standard:user" variant="base">
+
+    <div slot="title">
+      User Access Manager
+    </div>
+
+    <div slot="actions">
+      <lightning-button-group>
+        <lightning-button label="Home" onclick={homeHandler} variant="brand"></lightning-button>
+      </lightning-button-group>
+    </div>
+
+    <div class="slds-m-around_small">
+
+      <!-- Home Page -->
+      <div lwc:if={showHomePage}>
+        <c-uam-custom-button label="New Request" onclick={newRequestHandler}></c-uam-custom-button>
+        <c-uam-custom-button label="Track My Request" onclick={trackMyRequestHandler}></c-uam-custom-button>
+      </div>
+
+      <!-- New Request -->
+      <c-user-access-new-request lwc:if={showNewRequest}></c-user-access-new-request>
+
+      <!-- Track Request  -->
+      <c-user-access-track-request lwc:if={showTrackMyRequests}></c-user-access-track-request>
+
+    </div>
+  </lightning-card>
+</template>

@@ -1,0 +1,21 @@
+.app-container:hover{
+	background-color: whitesmoke;
+}
+.app-container{
+	background-color:white;
+	border-radius: 1em;
+	border-color: whitesmoke;
+	border-style: solid;
+	text-align: center;
+}
+.img-container{
+	width: 100px;
+    height: 100px;
+	align-content: center;
+}
+
+.img-container img{
+	max-width: 100%;
+    max-height: 100%;
+	mix-blend-mode: multiply;
+}

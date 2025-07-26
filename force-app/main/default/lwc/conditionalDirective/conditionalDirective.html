@@ -1,0 +1,62 @@
+<template>
+    <lightning-card>
+        <template lwc:if={showSelectScreen}>
+             <div class="slds-m-around_small">
+                <lightning-radio-group label="Select any one company" options={companyOptions} type="radio" data-id="radio-option" onchange={optionSelectedHandler}></lightning-radio-group>
+                <div class="button-container">
+                    <lightning-button variant="brand" label="Next" title="Next" onclick={nextButtonHandler}></lightning-button>
+                </div>
+            </div>
+        </template>
+
+        <!-- Apple template -->
+        <template lwc:if={showAppleTemplate}>
+            <div class="slds-m-around_small">
+                <div class="slds-text-heading_large heading">
+                    Apple 
+                </div>
+                <p>
+                    Apple Inc. is an American multinational corporation and technology company headquartered in Cupertino, California, in Silicon Valley. It designs, develops, and sells consumer electronics, computer software, and online services.
+                </p>
+                <div class="button-container">
+                    <lightning-button variant="Neutral" label="Back" title="Back" onclick={backButtonHandler}></lightning-button>
+                </div>
+            </div>
+            
+        </template>
+
+        <!-- Microsoft template -->
+        <template lwc:if={showMicrosoftTemplate}>
+            <div class="slds-m-around_small">
+                <div class="slds-text-heading_large heading">
+                    Microsoft 
+                </div>
+                <p>
+                    Microsoft Corporation is an American multinational corporation and technology company headquartered in Redmond, Washington. Microsoft's best-known software products are the Windows line of operating systems, the Microsoft 365 suite of productivity applications, and the Edge web browser.
+                </p>
+                <div class="button-container">
+                    <lightning-button variant="Neutral" label="Back" title="Back" onclick={backButtonHandler}></lightning-button>
+                </div>
+            </div>
+            
+        </template>
+
+        <!-- Google template -->
+        <template lwc:if={showGoogleTemplate}>
+            <div class="slds-m-around_small">
+                <div class="slds-text-heading_large heading">
+                    Google
+                </div>
+                <p>
+                    Google LLC is an American multinational corporation and technology company focusing on online advertising, search engine technology, cloud computing, computer software, quantum computing, e-commerce, consumer electronics, and artificial intelligence.
+                </p>
+                <div class="button-container">
+                    <lightning-button variant="Neutral" label="Back" title="Back" onclick={backButtonHandler}></lightning-button>
+                </div>
+            </div>
+            
+        </template>
+
+       
+    </lightning-card>
+</template>

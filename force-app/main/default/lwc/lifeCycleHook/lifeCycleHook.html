@@ -1,0 +1,10 @@
+<template>
+    <lightning-card>
+        LIFECYCLE HOOKS
+        <div data-id="div1">
+            HTML Element
+        </div>
+        <c-life-cycle-phases lwc:if={showChild}></c-life-cycle-phases>
+        <lightning-button variant="brand" label="Show/Hide Component" title="titleName" onclick={handleClick}></lightning-button>
+    </lightning-card>
+</template>
