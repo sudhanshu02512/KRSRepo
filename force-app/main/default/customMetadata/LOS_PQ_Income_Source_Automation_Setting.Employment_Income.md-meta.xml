@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Employment Income</label>
+    <protected>false</protected>
+    <values>
+        <field>Field_API_Name__c</field>
+        <value xsi:type="xsd:string">Annual_Income_from_Employment__c</value>
+    </values>
+    <values>
+        <field>Hierarchy__c</field>
+        <value xsi:type="xsd:double">1.0</value>
+    </values>
+    <values>
+        <field>Primary_Source_of_Income_Ref_Code__c</field>
+        <value xsi:type="xsd:string">3</value>
+    </values>
+    <values>
+        <field>Secondary_Source_of_Income_Ref_Code__c</field>
+        <value xsi:type="xsd:string">3</value>
+    </values>
+</CustomMetadata>

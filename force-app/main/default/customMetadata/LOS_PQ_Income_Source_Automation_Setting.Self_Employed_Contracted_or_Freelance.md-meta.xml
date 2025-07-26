@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Self-Employed, Contracted or Freelance</label>
+    <protected>false</protected>
+    <values>
+        <field>Field_API_Name__c</field>
+        <value xsi:type="xsd:string">Annual_Income_from_1099__c</value>
+    </values>
+    <values>
+        <field>Hierarchy__c</field>
+        <value xsi:type="xsd:double">2.0</value>
+    </values>
+    <values>
+        <field>Primary_Source_of_Income_Ref_Code__c</field>
+        <value xsi:type="xsd:string">2</value>
+    </values>
+    <values>
+        <field>Secondary_Source_of_Income_Ref_Code__c</field>
+        <value xsi:type="xsd:string">2</value>
+    </values>
+</CustomMetadata>

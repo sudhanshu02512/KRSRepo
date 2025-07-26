@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Personal_Financial_Summary__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Personal Financial Summary</label>
+    <referenceTo>Personal_Financial_Summary__c</referenceTo>
+    <relationshipLabel>Personal Financial Items</relationshipLabel>
+    <relationshipName>Personal_Financial_Items</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

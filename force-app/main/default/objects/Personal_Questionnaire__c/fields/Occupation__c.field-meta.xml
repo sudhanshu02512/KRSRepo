@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Occupation__c</fullName>
+    <label>Occupation</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Occupation</fullName>
+                <default>false</default>
+                <label>Occupation</label>
+            </value>
+            <value>
+                <fullName>Archivist</fullName>
+                <default>false</default>
+                <label>Archivist</label>
+            </value>
+            <value>
+                <fullName>Auto Mechanic</fullName>
+                <default>false</default>
+                <label>Auto Mechanic</label>
+            </value>
+            <value>
+                <fullName>Baker</fullName>
+                <default>false</default>
+                <label>Baker</label>
+            </value>
+            <value>
+                <fullName>Bookkeeper / Accounting Clerk</fullName>
+                <default>false</default>
+                <label>Bookkeeper / Accounting Clerk</label>
+            </value>
+            <value>
+                <fullName>Butcher / Meat Cutter</fullName>
+                <default>false</default>
+                <label>Butcher / Meat Cutter</label>
+            </value>
+            <value>
+                <fullName>Call Center Operator</fullName>
+                <default>false</default>
+                <label>Call Center Operator</label>
+            </value>
+            <value>
+                <fullName>Carpenter</fullName>
+                <default>false</default>
+                <label>Carpenter</label>
+            </value>
+            <value>
+                <fullName>Cashier</fullName>
+                <default>false</default>
+                <label>Cashier</label>
+            </value>
+            <value>
+                <fullName>Chemical Engineer</fullName>
+                <default>false</default>
+                <label>Chemical Engineer</label>
+            </value>
+            <value>
+                <fullName>Cleaners (Janitor / Cleaner)</fullName>
+                <default>false</default>
+                <label>Cleaners (Janitor / Cleaner)</label>
+            </value>
+            <value>
+                <fullName>Computer Support Specialist</fullName>
+                <default>false</default>
+                <label>Computer Support Specialist</label>
+            </value>
+            <value>
+                <fullName>Construction Worker</fullName>
+                <default>false</default>
+                <label>Construction Worker</label>
+            </value>
+            <value>
+                <fullName>Cook / Chef</fullName>
+                <default>false</default>
+                <label>Cook / Chef</label>
+            </value>
+            <value>
+                <fullName>Customer Service Representative</fullName>
+                <default>false</default>
+                <label>Customer Service Representative</label>
+            </value>
+            <value>
+                <fullName>Data Analyst</fullName>
+                <default>false</default>
+                <label>Data Analyst</label>
+            </value>
+            <value>
+                <fullName>Data Entry Clerk</fullName>
+                <default>false</default>
+                <label>Data Entry Clerk</label>
+            </value>
+            <value>
+                <fullName>Dentist</fullName>
+                <default>false</default>
+                <label>Dentist</label>
+            </value>
+            <value>
+                <fullName>Designer (Interior Designer)</fullName>
+                <default>false</default>
+                <label>Designer (Interior Designer)</label>
+            </value>
+            <value>
+                <fullName>Electrician</fullName>
+                <default>false</default>
+                <label>Electrician</label>
+            </value>
+            <value>
+                <fullName>Fast‑Food / Counter Worker</fullName>
+                <default>false</default>
+                <label>Fast‑Food / Counter Worker</label>
+            </value>
+            <value>
+                <fullName>Fitness Trainer</fullName>
+                <default>false</default>
+                <label>Fitness Trainer</label>
+            </value>
+            <value>
+                <fullName>Graphic Designer</fullName>
+                <default>false</default>
+                <label>Graphic Designer</label>
+            </value>
+            <value>
+                <fullName>Heavy &amp; Tractor‑Trailer Truck Driver</fullName>
+                <default>false</default>
+                <label>Heavy &amp; Tractor‑Trailer Truck Driver</label>
+            </value>
+            <value>
+                <fullName>Heavy Equipment Operator</fullName>
+                <default>false</default>
+                <label>Heavy Equipment Operator</label>
+            </value>
+            <value>
+                <fullName>HVAC Technician</fullName>
+                <default>false</default>
+                <label>HVAC Technician</label>
+            </value>
+            <value>
+                <fullName>Interpreter / Translator</fullName>
+                <default>false</default>
+                <label>Interpreter / Translator</label>
+            </value>
+            <value>
+                <fullName>Laborer / Freight, Stock, Material Mover</fullName>
+                <default>false</default>
+                <label>Laborer / Freight, Stock, Material Mover</label>
+            </value>
+            <value>
+                <fullName>Lawyer (Legal Professional)</fullName>
+                <default>false</default>
+                <label>Lawyer (Legal Professional)</label>
+            </value>
+            <value>
+                <fullName>Maid / Housekeeping Cleaner</fullName>
+                <default>false</default>
+                <label>Maid / Housekeeping Cleaner</label>
+            </value>
+            <value>
+                <fullName>Market Research Analyst</fullName>
+                <default>false</default>
+                <label>Market Research Analyst</label>
+            </value>
+            <value>
+                <fullName>Mental Health Counselor / Therapist</fullName>
+                <default>false</default>
+                <label>Mental Health Counselor / Therapist</label>
+            </value>
+            <value>
+                <fullName>Mason (Stone / Brick)</fullName>
+                <default>false</default>
+                <label>Mason (Stone / Brick)</label>
+            </value>
+            <value>
+                <fullName>Medical / Healthcare Provider (Doctor / Nurse / Therapist)</fullName>
+                <default>false</default>
+                <label>Medical / Healthcare Provider (Doctor / Nurse / Therapist)</label>
+            </value>
+            <value>
+                <fullName>Paralegal</fullName>
+                <default>false</default>
+                <label>Paralegal</label>
+            </value>
+            <value>
+                <fullName>Painter</fullName>
+                <default>false</default>
+                <label>Painter</label>
+            </value>
+            <value>
+                <fullName>Plumber</fullName>
+                <default>false</default>
+                <label>Plumber</label>
+            </value>
+            <value>
+                <fullName>Power‑Line Installer &amp; Repairer</fullName>
+                <default>false</default>
+                <label>Power‑Line Installer &amp; Repairer</label>
+            </value>
+            <value>
+                <fullName>Proofreader / Copy Editor</fullName>
+                <default>false</default>
+                <label>Proofreader / Copy Editor</label>
+            </value>
+            <value>
+                <fullName>Receptionist / Administrative Assistant</fullName>
+                <default>false</default>
+                <label>Receptionist / Administrative Assistant</label>
+            </value>
+            <value>
+                <fullName>Retail Salesperson</fullName>
+                <default>false</default>
+                <label>Retail Salesperson</label>
+            </value>
+            <value>
+                <fullName>Social Media Manager</fullName>
+                <default>false</default>
+                <label>Social Media Manager</label>
+            </value>
+            <value>
+                <fullName>Social Worker</fullName>
+                <default>false</default>
+                <label>Social Worker</label>
+            </value>
+            <value>
+                <fullName>Software Engineer / Coder</fullName>
+                <default>false</default>
+                <label>Software Engineer / Coder</label>
+            </value>
+            <value>
+                <fullName>Surgeon / Specialist</fullName>
+                <default>false</default>
+                <label>Surgeon / Specialist</label>
+            </value>
+            <value>
+                <fullName>Teacher / Educator</fullName>
+                <default>false</default>
+                <label>Teacher / Educator</label>
+            </value>
+            <value>
+                <fullName>Tax Preparer</fullName>
+                <default>false</default>
+                <label>Tax Preparer</label>
+            </value>
+            <value>
+                <fullName>Tour Guide</fullName>
+                <default>false</default>
+                <label>Tour Guide</label>
+            </value>
+            <value>
+                <fullName>Translator</fullName>
+                <default>false</default>
+                <label>Translator</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

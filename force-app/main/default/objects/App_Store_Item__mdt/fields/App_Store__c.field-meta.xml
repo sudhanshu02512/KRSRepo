@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>App_Store__c</fullName>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>App Store</label>
+    <referenceTo>App_Store__mdt</referenceTo>
+    <relationshipLabel>App Store Items</relationshipLabel>
+    <relationshipName>App_Store_Items</relationshipName>
+    <required>false</required>
+    <type>MetadataRelationship</type>
+    <unique>false</unique>
+</CustomField>

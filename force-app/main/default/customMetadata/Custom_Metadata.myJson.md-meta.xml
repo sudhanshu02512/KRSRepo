@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>myJson</label>
+    <protected>false</protected>
+    <values>
+        <field>JSON__c</field>
+        <value xsi:type="xsd:string">{
+  &quot;sourceObject&quot;: {
+    &quot;sourceObjectName&quot;: &quot;Enquiry__c&quot;,
+    &quot;sourceObjectFieldAssignment&quot;: [
+      {
+        &quot;sourceObjectField&quot;: &quot;eq_Status__c&quot;,
+        &quot;value&quot;: &quot;Converted&quot;
+      }
+    ]
+  },
+  &quot;targetObjectMapping&quot;: [
+    {
+      &quot;targetObjectName&quot;: &quot;Quotation__c&quot;,
+      &quot;targetFieldMapping&quot;: [
+        {
+          &quot;sourceField&quot;: &quot;Name&quot;,
+          &quot;targetField&quot;: &quot;Name&quot;
+        }
+      ]
+    }
+  ]
+}</value>
+    </values>
+</CustomMetadata>
